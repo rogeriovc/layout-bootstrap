@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início | Bootstrap Showcase</title>
+
+    <!-- Bootstrap 5 CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-code-slash me-2"></i>BootstrapShowcase
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Hero (Substituído CSS por classes nativas: bg-primary, py-5, text-white) -->
+    <header class="bg-primary text-white text-center py-5 shadow">
+        <div class="container py-5">
+            <h1 class="display-3 fw-bold mb-3"> Bootstrap 5</h1>
+            <p class="lead mb-4">Um guia prático e responsivo para o framework front-end mais popular do mundo.</p>
+            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                <a href="servicos.html" class="btn btn-light btn-lg px-4 fw-bold">Ver Componentes</a>
+                <a href="sobre.html" class="btn btn-outline-light btn-lg px-4">Saiba Mais</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção de Destaques -->
+    <main class="container my-5 flex-grow-1">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Poder do Grid System</h2>
+            <p class="text-muted">Veja como o layout se adapta automaticamente redimensionando a janela.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <div class="card h-100 border-0 shadow-sm text-center p-4">
+                    <div class="card-body">
+                        <div class="h1 text-primary mb-3"><i class="bi bi-phone"></i></div>
+                        <h3 class="h5 fw-bold">Mobile (col-12)</h3>
+                        <p class="text-muted small">Em telas pequenas, as colunas ocupam 100% da largura, empilhando-se verticalmente para melhor leitura.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card h-100 border-0 shadow-sm text-center p-4">
+                    <div class="card-body">
+                        <div class="h1 text-success mb-3"><i class="bi bi-tablet"></i></div>
+                        <h3 class="h5 fw-bold">Tablet (col-md-6)</h3>
+                        <p class="text-muted small">Em telas médias, o layout se reorganiza para exibir duas colunas lado a lado, otimizando o espaço.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card h-100 border-0 shadow-sm text-center p-4">
+                    <div class="card-body">
+                        <div class="h1 text-danger mb-3"><i class="bi bi-display"></i></div>
+                        <h3 class="h5 fw-bold">Desktop (col-lg-4)</h3>
+                        <p class="text-muted small">Em telas grandes, aproveitamos a largura total para exibir três ou mais colunas simultaneamente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center p-4 mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 BootstrapShowcase - Rogério Laporta.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
